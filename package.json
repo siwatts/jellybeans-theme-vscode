@@ -1,0 +1,21 @@
+{
+  "name": "jellybeans-theme",
+  "displayName": "Jellybeans Theme",
+  "description": "Jellybeans Theme, inspired by jellybeans.vim by nanotech",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Jellybeans.vim",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Jellybeans.vim-color-theme.json"
+      }
+    ]
+  }
+}
