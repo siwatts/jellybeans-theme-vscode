@@ -19,7 +19,26 @@
 		"sideBarSectionHeader.background": "#0000",
 		"sideBarSectionHeader.border": "#ccc3",
 		"tab.lastPinnedBorder": "#ccc3",
-		"list.activeSelectionIconForeground": "#FFF"
+		"list.activeSelectionIconForeground": "#FFF",
+		// Terminal colours
+		"terminal.foreground": "#e8e8d3",
+		"terminal.background": "#151515",
+		"terminal.ansiBlack": "#151515",
+		"terminal.ansiRed": "#cf6a4c",
+		"terminal.ansiGreen": "#799d6a",
+		"terminal.ansiYellow": "#ffb964",
+		"terminal.ansiBlue": "#8197bf",
+		"terminal.ansiMagenta": "#c6b6ee",
+		"terminal.ansiCyan": "#8fbfdc",
+		"terminal.ansiWhite": "#e8e8d3",
+		"terminal.ansiBrightBlack": "#888888",
+		"terminal.ansiBrightRed": "#cf6a4c",
+		"terminal.ansiBrightGreen": "#99ad6a",
+		"terminal.ansiBrightYellow": "#fad07a",
+		"terminal.ansiBrightBlue": "#8197bf",
+		"terminal.ansiBrightMagenta": "#c6b6ee",
+		"terminal.ansiBrightCyan": "#8fbfdc",
+		"terminal.ansiBrightWhite": "#adadad",
 	},
 	"tokenColors": [
 		{
@@ -581,5 +600,5 @@
 		"stringLiteral":"#99ad6a",
 		"customLiteral": "#fad07a",
 		"numberLiteral": "#cf6a4c",
-	}
+	},
 }
