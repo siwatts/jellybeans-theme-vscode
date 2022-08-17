@@ -88,13 +88,13 @@
 		{
 			"scope": "entity.name.tag.css",
 			"settings": {
-				"foreground": "#d7ba7d"
+				"foreground": "#c59f6f"
 			}
 		},
 		{
 			"scope": "entity.other.attribute-name",
 			"settings": {
-				"foreground": "#9cdcfe"
+				"foreground": "#c6b6ee"
 			}
 		},
 		{
@@ -109,7 +109,7 @@
 				"entity.other.attribute-name.scss"
 			],
 			"settings": {
-				"foreground": "#d7ba7d"
+				"foreground": "#c59f6f"
 			}
 		},
 		{
@@ -217,7 +217,7 @@
 		{
 			"scope": "meta.structure.dictionary.key.python",
 			"settings": {
-				"foreground": "#9cdcfe"
+				"foreground": "#c6b6ee"
 			}
 		},
 		{
@@ -304,7 +304,7 @@
 				"source.coffee.embedded"
 			],
 			"settings": {
-				"foreground": "#9cdcfe"
+				"foreground": "#c6b6ee"
 			}
 		},
 		{
@@ -360,7 +360,7 @@
 		{
 			"scope": "support.function.git-rebase",
 			"settings": {
-				"foreground": "#9cdcfe"
+				"foreground": "#c6b6ee"
 			}
 		},
 		{
@@ -478,7 +478,7 @@
 				"constant.other.placeholder", // placeholders in strings
 			],
 			"settings": {
-				"foreground": "#9CDCFE"
+				"foreground": "#c6b6ee"
 			}
 		},
 		{
@@ -488,7 +488,7 @@
 				"variable.other.enummember"
 			],
 			"settings": {
-				"foreground": "#4FC1FF",
+				"foreground": "#799d6a",
 			}
 		},
 		{
@@ -497,7 +497,7 @@
 				"meta.object-literal.key"
 			],
 			"settings": {
-				"foreground": "#9CDCFE"
+				"foreground": "#c6b6ee"
 			}
 		},
 		{
@@ -553,7 +553,7 @@
 		{
 			"scope": "keyword.operator.quantifier.regexp",
 			"settings": {
-				"foreground": "#d7ba7d"
+				"foreground": "#c59f6f"
 			}
 		},
 		{
@@ -565,7 +565,7 @@
 		{
 			"scope": "constant.character.escape",
 			"settings": {
-				"foreground": "#d7ba7d"
+				"foreground": "#c59f6f"
 			}
 		},
 		{
