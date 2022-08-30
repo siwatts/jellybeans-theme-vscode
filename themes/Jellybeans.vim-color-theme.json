@@ -88,7 +88,7 @@
 		"editorBracketHighlight.foreground6": "#fad07a",
 		// Git decorations
 		"gitDecoration.untrackedResourceForeground": "#8fbfdc",
-		"gitDecoration.modifiedResourceForeground": "#fad07a",
+		"gitDecoration.modifiedResourceForeground": "#ffb964",
 		"gitDecoration.deletedResourceForeground": "#cf6a4c",
 		"gitDecoration.stageModifiedResourceForeground": "#c6b6ee",
 		"gitDecoration.addedResourceForeground": "#99ad6a",
