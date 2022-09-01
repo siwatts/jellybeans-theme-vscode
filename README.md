@@ -2,31 +2,27 @@
 
 ## About
 
-This theme is based on the popular vim theme [jellybeans.vim by
-nanotech](https://github.com/nanotech/jellybeans.vim), ported to the syntax
-highlighting groups of the default Dark+ theme.
+Theme based on the popular vim theme [jellybeans.vim by
+nanotech](https://github.com/nanotech/jellybeans.vim), ported to syntax
+highlighting groups of default Dark+ theme.
 
-We use the comprehensive syntax highlighting groups of the default Dark+ theme
-for VS Code, but with the colour palette from jellybeans.vim. Where possible,
-jellybeans.vim syntax highlighting is preferred. For example, the Dark+ teal
-green used for class names has been replaced everywhere by the jellybeans.vim
-`:hi Type` orange/yellow. The Dark+ red string highlight has been replaced by
-jellybeans.vim `:hi String` green, always choosing the jellybeans.vim syntax
-highlight colour which closest reflects the meaning of the Dark+ element.
+Rather than attempting to recreate jellybeans vim theme in VS Code from scratch,
+the comprehensive syntax highlighting groups of the default Dark+ theme for VS
+Code are used and substituted with jellybeans.vim colours. This should preserve
+the powerful syntax highlighting abilities of VS Code, and result in a theme
+which looks good over multiple languages while having the look and feel of vim
+jellybeans.
 
 Although starting as a 1:1 colour swap into Dark+ theme, small modifications may
-be made to bring things more in line with jellybeans.vim appearance. Due to the
-different way that VS Code and vim highlight code it is not possible to fully
-replicate jellybeans.vim across all languages, and parity with the Dark+ theme
-is preferred over trying to recreate every element of jellybeans.vim.
+be made to bring things more in line with jellybeans.vim appearance.
 
 ## Screenshots
 
 ![Jellybeans.vim C code example](img/Screenshot_from_2022-08-31_18-01-22.png?raw=true "C code example")
-![Jellybeans.vim package.json example](img/Screenshot_from_2022-08-31_17-52-58.png?raw=true "UI example - package.json")
 ![Jellybeans.vim C code example 2](img/Screenshot_from_2022-08-31_18-01-34.png?raw=true "C code example, 2")
+![Jellybeans.vim package.json example](img/Screenshot_from_2022-08-31_17-52-58.png?raw=true "UI example - package.json")
 
-Screenshots from v0.0.2 which would become v1.0.0
+Screenshots from v0.0.2 form basis of v1.0.0
 
 ## Customisation
 
@@ -84,10 +80,10 @@ Brighter bracket pair matching:
   parity.
     - Less blanket variable/identifier highlighting (see Customisation above)
     - More fine tuned vim based highlighting groups
-        - Preproc commands -> light blue
-        - Preproc defines -> constant red where used (like enums)
+        - C/C++ preproc commands -> light blue
+        - C/C++ preproc defines -> constant red where they are used (like enums)
     - `:hi StorageClass` brown incorporation
     - `:hi Special` dark green for string escapes
     - Python `this`, `self` keywords are `:hi Special` dark green in nvim
-      TreeSitter highlighting?
-
+      TreeSitter highlighting, could incorporate
+- Better screenshots
