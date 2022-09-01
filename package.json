@@ -1,7 +1,7 @@
 {
-  "name": "jellybeans-theme",
+  "name": "jellybeans-vim-theme",
   "displayName": "Jellybeans Theme",
-  "description": "Jellybeans Theme, inspired by jellybeans.vim by nanotech",
+  "description": "Jellybeans Theme, based on jellybeans.vim by nanotech",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.70.0"
