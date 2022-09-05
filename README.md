@@ -16,6 +16,14 @@ jellybeans.
 Although starting as a 1:1 colour swap into Dark+ theme, small modifications may
 be made to bring things more in line with jellybeans.vim appearance.
 
+Package supplies two themes:
+
+- Jellybeans+
+    - Original Dark+ syntax highlighting groups, but with Jellybeans colours
+- Jellybeans.vim
+    - Based on Jellybeans+, with additional tweaks to bring more into line with
+      vim jellybeans.vim theme
+
 ## Screenshots
 
 ![Jellybeans.vim C code example](img/Screenshot_from_2022-08-31_18-01-22.png?raw=true "C code example")
@@ -35,10 +43,11 @@ Remove some variable / identifier highlighting:
 - Can remove this and get foreground text colour back, leaving only function
   parameters and similar to be highlighted
 - This will give more of a legacy vim style look
+- *Jellybeans.vim* variant already includes this change
 
 ```json
 "editor.tokenColorCustomizations": {
-    "[Jellybeans.vim]": {
+    "[Jellybeans*]": {
         // Disable some variable highlighting
         "textMateRules": [
             { "scope": "variable.parameter", "settings": { "foreground": "#c6b6ee", "fontStyle": "", }, },
@@ -56,7 +65,7 @@ Brighter bracket pair matching:
 
 ```json
 "workbench.colorCustomizations": {
-    "[Jellybeans.vim]": {
+    "[Jellybeans*]": {
         "editorBracketHighlight.foreground1": "#8fbfdc",
         "editorBracketHighlight.foreground2": "#ffb964",
         "editorBracketHighlight.foreground3": "#8197bf",
@@ -73,17 +82,15 @@ Brighter bracket pair matching:
 | ------- | ----- |
 | v0.9.0  | First draft, 1:1 colour swap from jellybeans.vim into Dark+, plus UI elements |
 | v1.0.0  | Minor revisions. Bracket pair matching, enums more consistent with vim theme, dark green incorporated etc. |
+| v1.1.0  | Split into *Jellybeans+* and *Jellybeans.vim* variants, plus debugging colours |
 
 ## Future
 
-- "Legacy theme" option, targetting more vim compatibility and less Dark+ theme
-  parity.
-    - Less blanket variable/identifier highlighting (see Customisation above)
-    - More fine tuned vim based highlighting groups
-        - C/C++ preproc commands -> light blue
-        - C/C++ preproc defines -> constant red where they are used (like enums)
+- More fine tuned vim based highlighting groups
+    - C/C++ preproc defines -> constant red where they are used (like enums)
     - `:hi StorageClass` brown incorporation
     - `:hi Special` dark green for string escapes
-    - Python `this`, `self` keywords are `:hi Special` dark green in nvim
-      TreeSitter highlighting, could incorporate
+    - Python "None" and other language constants are `:hi Special` dark green in
+      nvim. They get clobbered by language constants (True/False) mapping
+      currently
 - Better screenshots
