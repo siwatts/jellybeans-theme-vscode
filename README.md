@@ -47,7 +47,7 @@ Remove some variable / identifier highlighting:
 
 ```json
 "editor.tokenColorCustomizations": {
-    "[Jellybeans*]": {
+    "[Jellybeans+][Jellybeans.vim]": {
         // Disable some variable highlighting
         "textMateRules": [
             { "scope": "variable.parameter", "settings": { "foreground": "#c6b6ee", "fontStyle": "", }, },
@@ -65,7 +65,7 @@ Brighter bracket pair matching:
 
 ```json
 "workbench.colorCustomizations": {
-    "[Jellybeans*]": {
+    "[Jellybeans+][Jellybeans.vim]": {
         "editorBracketHighlight.foreground1": "#8fbfdc",
         "editorBracketHighlight.foreground2": "#ffb964",
         "editorBracketHighlight.foreground3": "#8197bf",
