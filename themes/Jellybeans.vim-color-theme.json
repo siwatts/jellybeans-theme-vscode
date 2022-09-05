@@ -1,0 +1,67 @@
+{
+	"name": "Jellybeans.vim",
+	"include": "./Jellybeans-plus-color-theme.json",
+	"tokenColors": [
+		// == Disable variable highlighting except actual method parameters ==
+		{
+			"scope": [
+				"variable.parameter",
+			],
+			"settings": {
+				"foreground": "#c6b6ee", "fontStyle": "",
+			},
+		},
+		{
+			"scope": [
+				"variable.other",
+			],
+			"settings": {
+				"foreground": "#e8e8d3", "fontStyle": "",
+			},
+		},
+		// == Language specific tweaks ==
+		{
+			// It's actually only the #include and #define which are light blue in nvim TreeSitter. The conditional #ifdef stuff is not
+			"scope": [
+				"keyword.control.directive.include.c",
+				"keyword.control.directive.define.c",
+				"keyword.control.directive.include.cpp",
+				"keyword.control.directive.define.cpp",
+				"keyword.control.import.python",
+			],
+			"settings": {
+				"foreground": "#8fbfdc", "fontStyle": "",
+			},
+		},
+		{
+			"scope": [
+				"entity.name.namespace",
+			],
+			"settings": {
+				"foreground": "#e8e8d3", "fontStyle": "",
+			},
+		},
+		// == All languages ==
+		{
+			// Gets True/False, but also clobbers sme other constants which are Special green like python None
+			// Can also use semantic "builtinConstant"
+			"scope": [
+				"constant.language",
+			],
+			"settings": {
+				"foreground": "#cf6a4c", "fontStyle": "",
+			},
+		},
+		{
+			"scope": [
+				"constant.character.escape",
+			],
+			"settings": {
+				"foreground": "#cf6a4c", "fontStyle": "", // or "#799d6a" in vim
+			},
+		},
+	],
+	"semanticTokenColors": {
+		"selfParameter": "#799d6a", // Special Green
+	},
+}
