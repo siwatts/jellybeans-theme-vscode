@@ -18,6 +18,11 @@
   "contributes": {
     "themes": [
       {
+        "label": "Jellybeans+",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Jellybeans-plus-color-theme.json"
+      },
+      {
         "label": "Jellybeans.vim",
         "uiTheme": "vs-dark",
         "path": "./themes/Jellybeans.vim-color-theme.json"
