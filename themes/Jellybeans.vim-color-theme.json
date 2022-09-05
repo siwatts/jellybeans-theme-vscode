@@ -57,7 +57,7 @@
 				"constant.character.escape",
 			],
 			"settings": {
-				"foreground": "#cf6a4c", "fontStyle": "", // or "#799d6a" in vim
+				"foreground": "#799d6a", "fontStyle": "",
 			},
 		},
 	],
