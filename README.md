@@ -2,9 +2,9 @@
 
 ## About
 
-Theme based on the popular vim theme [jellybeans.vim by
-nanotech](https://github.com/nanotech/jellybeans.vim), ported to syntax
-highlighting groups of default vscode Dark+ theme.
+Based on the popular vim theme [jellybeans.vim by
+nanotech](https://github.com/nanotech/jellybeans.vim), with the syntax
+highlighting of vscode's Dark+.
 
 Package currently supplies two themes:
 
