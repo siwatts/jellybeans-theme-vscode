@@ -105,7 +105,7 @@
 		"debugTokenExpression.error": "#cf6a4c",
 		"debugTokenExpression.name": "#c6b6ee",
 		"debugTokenExpression.string": "#99ad6a",
-		"debugTokenExpression.value": "#888888",
+		"debugTokenExpression.value": "#9098a0", // vim :hi TabLineFill Blue/grey
 	},
 	"tokenColors": [
 		{
@@ -574,7 +574,7 @@
 				"variable.other.enummember"
 			],
 			"settings": {
-				"foreground": "#cf6a4c",
+				"foreground": "#799d6a",
 			}
 		},
 		{
@@ -651,7 +651,7 @@
 		{
 			"scope": "constant.character.escape",
 			"settings": {
-				"foreground": "#c59f6f"
+				"foreground": "#cf6a4c"
 			}
 		},
 		{

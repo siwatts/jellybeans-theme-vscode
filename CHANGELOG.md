@@ -44,3 +44,27 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
       etc.)
     - Disable variable highlighting, except for method/function parameters
     - Python "self" keyword to `:hi Special` dark green
+
+## [1.1.1] - 2022-09-30
+### Added
+- Language built-in primitives (`int` etc.) to `:hi Type` orange in *Jellybeans.vim*
+  - This additional mapping is more true to vim. In VS Code Dark+ these are
+    just grouped with other language keywords in `:hi PreProc` cyan
+- `:hi StorageClass` brown for `storage.modifier` in *Jellybeans.vim*
+- Add operator highlights (`=`, `<`, `*char`, etc.) from previous fg colour to
+  `:hi PreProc` cyan, as in vim, in *Jellybeans.vim* variant only
+  - Retained as fg colour in *Jellybeans+* to differentiate from the more
+    widespread variable magenta highlights
+- Semantic `macro` highlight to `Constant` red for *Jellybeans.vim*, emulates
+  where C/C++ macros (ie. subject of `#define`) are used in neovim with
+  TreeSitter highlight enabled.
+  - Clashes with enum members, but this is true to vim
+### Changed
+- `debugTokenExpression.value` to a more legible suitable grey/blue
+- 'Constant' variables and enummembers
+  - Back to `:hi Special` green in *Jellybeans+*, more true to Dark+
+  - Retain `:hi Constant` red for enummembers only in *Jellybeans.vim*,
+    as in neovim
+- String constant char escapes
+  - From `StorageClass` brown to `Constant` red in *Jellybeans+*
+  - From `StorageClass` brown to `Special` green in *Jellybeans.vim*, as in vim

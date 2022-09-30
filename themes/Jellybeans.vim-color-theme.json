@@ -60,8 +60,47 @@
 				"foreground": "#799d6a", "fontStyle": "",
 			},
 		},
+		{
+			// Revert the change to special green in jb+ back to constant red
+			// But only for enummember this time, not other variable constants like variables that python thinks are a constant
+			"scope": [
+				//"variable.other.constant",
+				"variable.other.enummember"
+			],
+			"settings": {
+				"foreground": "#cf6a4c",
+			}
+		},
+		{
+			// Basic language types (int, bool etc.) to :hi Type orange as seen in vim
+			"scope": [
+				"storage.type.built-in.primitive",
+			],
+			"settings": {
+				"foreground": "#ffb964",
+			}
+		},
+		{
+			// Storage class such as `const` in C/C++, `:hi StorageClass` in vim (though not nvim with TreeSitter)
+			"scope": [
+				"storage.modifier",
+			],
+			"settings": {
+				"foreground": "#c59f6f",
+			}
+		},
+		{
+			// Operators ('=', '<' etc.) to :hi PreProc cyan as seen in vim
+			"scope": [
+				"keyword.operator",
+			],
+			"settings": {
+				"foreground": "#8fbfdc",
+			}
+		},
 	],
 	"semanticTokenColors": {
-		"selfParameter": "#799d6a", // Special Green
+		"selfParameter": "#799d6a", // Special Green, for python 'self' etc.
+		"macro": "#cf6a4c", // e.g. subjects of #define in C++, where they are defined and used. To Constant Red, but clashes with enums (as in neovim)
 	},
 }
