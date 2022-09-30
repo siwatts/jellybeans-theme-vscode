@@ -4,15 +4,17 @@
 
 Theme based on the popular vim theme [jellybeans.vim by
 nanotech](https://github.com/nanotech/jellybeans.vim), ported to syntax
-highlighting groups of default Dark+ theme.
+highlighting groups of default vscode Dark+ theme.
 
 Package currently supplies two themes:
 
 - Jellybeans+
-    - Original Dark+ syntax highlighting groups, but with Jellybeans colours
+    - Powerful *Dark+* syntax highlighting groups, now with Jellybeans colours!
 - Jellybeans.vim
-    - Based on Jellybeans+, with additional tweaks to bring more into line with
-      vim jellybeans.vim theme
+    - Variant for that classic *vim* look
+    - Brought closer to the original *jellybeans.vim* as implemented by *neovim*
+      with *TreeSitter highlight* plugin where possible, or vanilla *vim*
+      implementation
 
 ## Screenshots
 
