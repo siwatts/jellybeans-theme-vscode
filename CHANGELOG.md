@@ -68,3 +68,24 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - String constant char escapes
   - From `StorageClass` brown to `Constant` red in *Jellybeans+*
   - From `StorageClass` brown to `Special` green in *Jellybeans.vim*, as in vim
+
+## [1.1.2] - 2022-12-05
+### Added
+- *Jellybeans.vim* variant changes to closer match vim (neovim + TreeSitter) for some languages (C, C++, python):
+  - Add C language punctuation and accessor colouring e.g.
+    - Pointer access
+    - Dot accessors
+    - Function calls
+    - Separators (commas)
+    - Termination of statements
+  - Add the same for C++ as above, including also:
+    - All of C changes
+    - Namespace and scope resolution
+    - Arrow operator
+  - Python changes, delimiters and punctuation e.g.
+    - Class and function definitions terminators
+    - Arg and parameter separators
+    - Dot accessors
+### Changed
+- Support older VS Code versions
+  - Change from minimum required vscode version 1.70 to 1.60

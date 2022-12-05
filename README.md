@@ -95,6 +95,7 @@ Brighter bracket pair matching:
 | v1.0.0  | Minor revisions. Bracket pair matching, enums more consistent with vim theme, dark green incorporated etc. |
 | v1.1.0  | Split into *Jellybeans+* and *Jellybeans.vim* variants, plus debugging colours |
 | v1.1.1  | Minor fixes and enhancements, *Jellybeans.vim* brought closer to neovim |
+| v1.1.2  | Minor enhancements, *Jellybeans.vim* brought closer to neovim. Lower min. vscode vers. requirement |
 
 ## Future
 
