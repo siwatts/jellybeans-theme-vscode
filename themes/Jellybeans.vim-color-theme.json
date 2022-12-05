@@ -41,6 +41,72 @@
 				"foreground": "#e8e8d3", "fontStyle": "",
 			},
 		},
+		// C punctuation and accessors
+		{
+			"scope": [
+                "punctuation.separator.pointer-access.c",
+                "punctuation.separator.dot-access.c",
+                "meta.function-call.c",
+			],
+			"settings": {
+				"foreground": "#8fbfdc", "fontStyle": "",
+			},
+		},
+		{
+			"scope": [
+                "punctuation.separator.delimiter.c",
+                "punctuation.terminator.statement.c",
+			],
+			"settings": {
+				"foreground": "#668799", "fontStyle": "",
+			},
+		},
+		// C++ punctuation and accessors
+		{
+			"scope": [
+                "punctuation.separator.pointer-access.cpp",
+                "punctuation.separator.dot-access.cpp",
+                "meta.function-call.cpp",
+			],
+			"settings": {
+				"foreground": "#8fbfdc", "fontStyle": "",
+			},
+		},
+		{
+			"scope": [
+                "punctuation.separator.delimiter.cpp",
+                "punctuation.separator.delimiter.comma.cpp",
+                "punctuation.terminator.statement.cpp",
+                "punctuation.separator.scope-resolution.cpp",
+                "punctuation.separator.namespace.access.cpp",
+			],
+			"settings": {
+				"foreground": "#668799", "fontStyle": "",
+			},
+		},
+		// Python punctuation
+		{
+			"scope": [
+                "punctuation.separator.arguments.python",
+                "punctuation.separator.colon.python",
+                "punctuation.separator.parameters.python",
+                "punctuation.section.class.begin.python",
+                "punctuation.section.function.begin.python",
+                "punctuation.separator.period.python",
+			],
+			"settings": {
+				"foreground": "#668799", "fontStyle": "",
+			},
+		},
+		// Overridden by something above?
+		{
+			"scope": [
+				"support.variable.magic.python.python",
+			],
+			"settings": {
+				"foreground": "#799d6a", "fontStyle": "",
+			},
+		},
 		// == All languages ==
 		{
 			// Gets True/False, but also clobbers sme other constants which are Special green like python None
