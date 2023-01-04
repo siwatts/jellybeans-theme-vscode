@@ -89,3 +89,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 - Support older VS Code versions
   - Change from minimum required vscode version 1.70 to 1.60
+
+## [1.1.3] - 2023-01-04
+### Added
+- General UI element colours
+  - UI element backgrounds
+  - Menus, highlight colours etc.
+  - UI foreground text
+  - Global foreground text
+### Changed
+- Search highlighting
+
