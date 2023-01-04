@@ -19,12 +19,10 @@
 		"sideBarTitle.foreground": "#e8e8d3",
 		"input.placeholderForeground": "#A6A6A6",
 		"menu.background": "#303031",
-		"menu.foreground": "#CCCCCC",
 		"ports.iconRunningProcessForeground": "#369432",
 		"sideBarSectionHeader.background": "#0000",
 		"sideBarSectionHeader.border": "#ccc3",
 		"tab.lastPinnedBorder": "#ccc3",
-		"list.activeSelectionIconForeground": "#FFF",
 		// Additional UI
 		"activityBar.background": "#403c41",
 		"activityBar.foreground": "#e8e8d3",
@@ -35,10 +33,7 @@
 		"sideBar.foreground": "#e8e8d3",
 		"tab.activeForeground": "#e8e8d3",
 		"tab.activeBackground": "#151515",
-		"tab.inactiveForeground": "#ccc5c4",
 		"tab.inactiveBackground": "#353335",
-		"breadcrumb.foreground": "#ccc5c4",
-		"breadcrumb.background": "#151515",
 		"editorLineNumber.foreground": "#605958",
 		"editorLineNumber.activeForeground": "#908583",
 		// Bottom bar
@@ -106,6 +101,28 @@
 		"debugTokenExpression.name": "#c6b6ee",
 		"debugTokenExpression.string": "#99ad6a",
 		"debugTokenExpression.value": "#9098a0", // vim :hi TabLineFill Blue/grey
+		// Further UI elements
+		"titleBar.activeBackground": "#252526",
+		"titleBar.activeForeground": "#e8e8d3",
+		"list.activeSelectionBackground": "#2b5b77",
+		"list.activeSelectionIconForeground": "#e8e8d3",
+		"list.activeSelectionForeground": "#e8e8d3",
+		"list.inactiveSelectionBackground": "#403c41",
+		"list.inactiveSelectionForeground": "#e8e8d3",
+		"list.inactiveSelectionIconForeground": "#e8e8d3",
+		"list.highlightForeground": "#8fbfdc",
+		"breadcrumb.background": "#1c1c1c",
+		"breadcrumb.activeSelectionForeground": "#8fbfdc",
+		"breadcrumb.foreground": "#b0b0a0", // Normal FG, value 69
+		"breadcrumb.focusForeground": "#e8e8d3",
+		"editorStickyScroll.background": "#1c1c1c",
+		"foreground": "#e8e8d3", // Catches welcome page and some other places
+		"menu.foreground": "#e8e8d3",
+		"tab.inactiveForeground": "#b0b0a0", // Normal FG, value 69
+		"tab.unfocusedActiveForeground": "#b0b0a0", // Normal FG, value 69
+		"tab.unfocusedInactiveForeground": "#908583",
+		"editor.findMatchBackground": "#325413", // Value -> 33
+		"editor.findMatchHighlightBackground": "#611339", // more saturation
 	},
 	"tokenColors": [
 		{
