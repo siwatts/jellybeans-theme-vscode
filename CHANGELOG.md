@@ -100,3 +100,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 - Search highlighting
 
+## [1.1.4] - 2023-01-14
+### Changed
+- *Jellybeans.vim* variant remove `macro` semantic definition, reverts to base behaviour inherited from *Jellybeans+*
+  - Macro catches subjects of things like `#define` in C/C++ both where they are defined and used
+  - In neovim C++ they can be `:hi Constant` red
+  - In neovim C code they can be `:hi PreProc` cyan where defined, `:hi Special` green / `:hi Constant` red / `:hi Function` yellow where used depending on whether they look like language keywords `NULL`, constants `TRUE`/`FALSE`, or function calls `MACRO()` respectively
+  - In vim C code without *TreeSitter* highlighting they are also `:hi PreProc` cyan
+  - Since we can't emulate all vim behaviour, we leave macro undefined and inherit the *Jellybeans+* `:hi PreProc` cyan as the choice that makes the most sense in vscode
+  - Other languages may colour macros differently
+
