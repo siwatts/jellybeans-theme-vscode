@@ -167,6 +167,12 @@
 	],
 	"semanticTokenColors": {
 		"selfParameter": "#799d6a", // Special Green, for python 'self' etc.
-		"macro": "#cf6a4c", // e.g. subjects of #define in C++, where they are defined and used. To Constant Red, but clashes with enums (as in neovim)
+		//"macro": "#cf6a4c",
+		// Macro catches subjects of #define in C/C++ where they are defined and used
+		// In neovim C++ they can be Constant red, but for C code they can be PreProc cyan where defined,
+		// Special green / Constant red / Function yellow where used depending on whether they look like
+		// language keywords 'NULL', constants 'TRUE/FALSE', or function calls 'MACRO()'
+		// Since we can't emulate vim behaviour, we leave macro undefined and inherit the jb+ PreProc cyan
+		// as the choice that makes the most sense in vscode
 	},
 }
