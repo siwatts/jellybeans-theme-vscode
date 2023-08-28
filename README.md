@@ -111,6 +111,7 @@ Brighter bracket pair matching:
 | v1.1.2  | Minor enhancements, *Jellybeans.vim* brought closer to neovim. Lower min. vscode vers. requirement |
 | v1.1.3  | Add or modify general UI colours and search highlighting |
 | v1.1.4  | Remove semantic `macro` definition for *Jellybeans.vim* |
+| v1.1.5  | Drop minimum version to 1.50, add new example screenshots and cleanup README.md |
 
 ## Future
 
