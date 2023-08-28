@@ -6,23 +6,28 @@ Based on the popular vim theme [jellybeans.vim by
 nanotech](https://github.com/nanotech/jellybeans.vim), with the syntax
 highlighting of vscode's Dark+.
 
-Package currently supplies two themes:
+Package supplies two themes:
 
 - Jellybeans+
     - Powerful *Dark+* syntax highlighting groups, now with Jellybeans colours!
 - Jellybeans.vim
     - Variant for that classic *vim* look
-    - Brought closer to the original *jellybeans.vim* as implemented by *neovim*
+    - Brought closer to the original *jellybeans.vim* as rendered by *neovim*
       with *TreeSitter highlight* plugin where possible, or vanilla *vim*
       implementation
 
+Theme includes UI & menus, integrated terminal, debugger syntax, and more!
+
 ## Screenshots
 
-![Jellybeans.vim C code example](img/Screenshot_from_2022-08-31_18-01-22.png?raw=true "C code example")
-![Jellybeans.vim C code example 2](img/Screenshot_from_2022-08-31_18-01-34.png?raw=true "C code example, 2")
-![Jellybeans.vim package.json example](img/Screenshot_from_2022-08-31_17-52-58.png?raw=true "UI example - package.json")
+![Jellybeans.vim C code example](img/Screenshot_from_2023-08-28_21-47-31.png?raw=true "C code example")
+![Jellybeans.vim C code example 2](img/Screenshot_from_2023-08-28_21-47-59.png?raw=true "C code example, 2")
+![Jellybeans.vim C code example 3](img/Screenshot_from_2023-08-28_21-48-45.png?raw=true "C code example, 3")
+![Jellybeans.vim package.json example](img/Screenshot_from_2023-08-28_22-06-03.png?raw=true "UI example - package.json")
 
-Screenshots from v0.0.2 form basis of v1.0.0
+Screenshots from v1.1.4
+
+Font: IBM Plex Mono Regular
 
 ## Description
 
@@ -33,19 +38,27 @@ the powerful syntax highlighting abilities of VS Code, and result in a theme
 which looks good over multiple languages while having the look and feel of vim
 jellybeans.
 
-Although starting as a 1:1 colour swap into Dark+ theme, small modifications may
-be made to bring things more in line with jellybeans.vim appearance.
+Although starting as a 1:1 colour swap into Dark+ theme, modifications are
+made to bring things more in line with jellybeans.vim appearance.
 
 There are currently two variants, one leaning more towards 1:1 Dark+ syntax
 highlighting groups, and one which seeks more to emulate jellybeans.vim as seen
 in vim (and neovim). It is not possible to fully replicate vim syntax
 highlighting groups in VS Code, but where possible inspiration is taken from
-`jellybeans.vim` as manifest by `neovim` with the plugin `TreeSitter highlight`
+`jellybeans.vim` as rendered by `neovim` with the plugin `TreeSitter highlight`
 enabled.
 
 ## Customisation
 
-| Add to your `settings.json` to override colour options |
+On Linux to enable jellybeans theme titlebars and menu UI items you can add the
+following to your vscode `settings.json` file:
+
+```json
+"window.titleBarStyle": "custom",
+"window.dialogStyle": "custom",
+```
+
+| Add to your `settings.json` to override individual colour options by theme |
 | --- |
 
 Remove some variable / identifier highlighting:
@@ -109,7 +122,6 @@ Possible future developments
     - Python "None" and other language constants are `:hi Special` dark green in
       nvim. They get clobbered by language constants (True/False) mapping
       currently
-- Better screenshots
 - Light variant
   - Based on light colours from hybrid.vim or other bespoke colours
 - Other contrast variants
