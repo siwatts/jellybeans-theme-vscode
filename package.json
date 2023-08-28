@@ -4,7 +4,7 @@
   "description": "Jellybeans Theme, based on jellybeans.vim by nanotech",
   "version": "1.1.4",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.50.0"
   },
   "categories": [
     "Themes"
